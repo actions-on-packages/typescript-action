@@ -10,6 +10,8 @@ on: # rebuild any PRs and main branch changes
   workflow_dispatch:
 
 jobs:
+  reusable_workflow_job:
+    uses: actions-on-packages/hello-world-go-action/.github/workflows/use_ts_action.yml@main
   run-ts: # make sure build/ci work properly
     runs-on: ubuntu-latest
     steps:
@@ -20,6 +22,3 @@ jobs:
          uses: ./
          with: 
           milliseconds: 1000
-       
-       - name: Testing reusable workflows
-         uses: actions-on-packages/hello-world-go-action/.github/workflows/use_ts_action.yml@main
