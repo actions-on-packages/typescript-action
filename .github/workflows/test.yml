@@ -6,6 +6,8 @@ on: # rebuild any PRs and main branch changes
     branches:
       - main
       - 'releases/*'
+      
+  workflow_dispatch:
 
 jobs:
   run-ts: # make sure build/ci work properly
