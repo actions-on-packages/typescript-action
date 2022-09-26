@@ -13,7 +13,7 @@ jobs:
   reusable_workflow_job:
     uses: actions-on-packages/hello-world-go-action/.github/workflows/use_ts_action.yml@main
   run-ts: # make sure build/ci work properly
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
        - name: Checkout
          uses: actions/checkout@v3
