@@ -11,6 +11,9 @@ jobs:
         uses: actions/checkout@v3
         with:
            ref: ${{ github.event.payload.release.tag_name}}
+     
+      - name: Print event payload
+        run: echo ${{github.event.payload.release.sha}}
        
 #       - name: Use Node.js
 #         uses: actions/setup-node@v3
