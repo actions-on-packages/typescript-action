@@ -13,7 +13,7 @@ jobs:
            ref: ${{ github.event.payload.release.tag_name}}
      
       - name: Print event payload
-        run: echo ${{github.event.payload.release.target_commitish}}
+        run: echo '${{ toJSON(github.event.payload.release.target_commitish) }}'
        
 #       - name: Use Node.js
 #         uses: actions/setup-node@v3
