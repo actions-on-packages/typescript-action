@@ -10,10 +10,10 @@ on: # rebuild any PRs and main branch changes
   workflow_dispatch:
 
 jobs:
-  reusable_workflow_job:
-    uses: actions-on-packages/hello-world-go-action/.github/workflows/use_ts_action.yml@main
+ # reusable_workflow_job:
+  #  uses: actions-on-packages/hello-world-go-action/.github/workflows/use_ts_action.yml@main
   run-ts: # make sure build/ci work properly
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
        - name: Checkout
          uses: actions/checkout@v3
