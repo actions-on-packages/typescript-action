@@ -1,6 +1,7 @@
 name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
+version: '1.0.0'
 inputs:
   milliseconds: # change this
     required: true
