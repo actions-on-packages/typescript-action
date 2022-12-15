@@ -15,6 +15,9 @@ jobs:
   run-ts: # make sure build/ci work properly
     runs-on: ubuntu-latest
     steps:
+       - name: Private-action
+         uses: actions-on-packages/private-action@v2
+         
        - name: Checkout
          uses: actions/checkout@v3
          
